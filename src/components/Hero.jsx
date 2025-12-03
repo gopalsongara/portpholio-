@@ -74,7 +74,7 @@ const Hero = () => {
               <div className="glass glass-hover relative w-80 h-80 sm:w-96 sm:h-96 rounded-2xl overflow-hidden flex items-center justify-center">
                 <div className="text-center p-8">
                   <div className="w-48 h-48 mx-auto mb-4 bg-gradient-to-br from-teal-500/20 to-emerald-500/20 rounded-full flex items-center justify-center">
-                    <div className="text-6xl"><img className='rounded-full w-full h-full object-cover' src="1234.jpg" alt="" /></div>
+                    <div className="text-6xl"><img className='rounded-full w-full h-full object-cover' src="/1234.jpg" alt="" /></div>
                   </div>
                
                 </div>
