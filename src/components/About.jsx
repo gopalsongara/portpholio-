@@ -46,7 +46,7 @@ const About = () => {
                 <div className="w-full h-full bg-gradient-to-br from-teal-500/20 to-emerald-500/20 flex items-center justify-center">
                   <div className="text-center">
                     <div className="w-40 h-35 mx-auto mb-4 bg-gradient-to-br from-teal-500/30 to-emerald-500/30 rounded-full flex items-center justify-center">
-                      <div className="text-5xl"><img className='rounded-full w-full h-full object-cover' src="/123.jpg" alt="" /></div>
+                      <div className="text-5xl"><img className='rounded-full w-full h-full object-cover' src="/public/123.jpg" alt="" /></div>
                     </div>
                     <p className="text-sm text-gray-400"></p
                   </div>
