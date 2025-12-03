@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-black text-white overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10 rounded-xl shadow-2xl;
+  }
+  
+  .glass-hover {
+    @apply transition-all duration-300 hover:bg-white/10 hover:border-white/20 hover:shadow-teal-500/20;
+  }
+  
+  .neon-text {
+    text-shadow: 0 0 10px rgba(20, 184, 166, 0.5),
+                 0 0 20px rgba(20, 184, 166, 0.3),
+                 0 0 30px rgba(20, 184, 166, 0.2);
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-teal-400 via-emerald-400 to-teal-500 bg-clip-text text-transparent;
+  }
+  
+  .gradient-button {
+    @apply bg-gradient-to-r from-teal-500 to-emerald-500 text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-teal-500/50 hover:scale-105;
+  }
+  
+  .pink-gradient-button {
+    @apply bg-gradient-to-r from-pink-500 to-purple-600 text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-pink-500/50 hover:scale-105;
+  }
+  
+  .aurora-bg {
+    background: linear-gradient(135deg, #0d9488 0%, #059669 25%, #0f766e 50%, #0d9488 75%, #059669 100%);
+    background-size: 400% 400%;
+    animation: aurora 15s ease infinite;
+  }
+  
+  @keyframes aurora {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  
+  .particle {
+    @apply absolute w-1 h-1 bg-teal-400 rounded-full opacity-30;
+    animation: float 6s ease-in-out infinite;
+    box-shadow: 0 0 10px rgba(20, 184, 166, 0.5);
+  }
+}
